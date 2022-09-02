@@ -1,12 +1,14 @@
+import { GlobalStyle } from './styles/Global.style';
+import { BrowserRouter } from 'react-router-dom';
+import { IndexRoute } from './routes/index';
 
-import './App.css';
-
-function App() {
+export function App() {
   return (
-    <div className="App">
-
+    <div className="__window">
+      <GlobalStyle />
+      <BrowserRouter>
+        <IndexRoute />
+      </BrowserRouter>
     </div>
   );
 }
-
-export default App;
